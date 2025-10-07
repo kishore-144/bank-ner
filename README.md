@@ -17,7 +17,7 @@ A **FastAPI-based Named Entity Recognition (NER) API** for detecting bank names 
 ## Project Structure
 
 ```text
-app/
+bank-ner/
 ├── bank_patterns.json       # JSON file with default bank patterns
 ├── main.py                  # FastAPI application
 ├── requirements.txt         # Python dependencies
@@ -32,8 +32,7 @@ app/
 ### 1. Clone the repository
 
 ```bash
-git clone <repo_url>
-cd <repo_folder>/app
+git clone https://github.com/kishore-144/bank-ner.git
 ```
 
 ### 2. Create virtual environment (optional)
