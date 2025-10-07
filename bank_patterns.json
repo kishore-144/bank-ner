@@ -1,0 +1,730 @@
+[
+  {
+    "label": "BANK",
+    "pattern": "SBI"
+  },
+  {
+    "label": "BANK",
+    "pattern": "State Bank of India"
+  },
+  {
+    "label": "BANK",
+    "pattern": "BOB"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Bank of Baroda"
+  },
+  {
+    "label": "BANK",
+    "pattern": "PNB"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Punjab National Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "CANARA"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Canara Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "UBI"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Union Bank of India"
+  },
+  {
+    "label": "BANK",
+    "pattern": "BOI"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Bank of India"
+  },
+  {
+    "label": "BANK",
+    "pattern": "INDIAN"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Indian Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "UCO"
+  },
+  {
+    "label": "BANK",
+    "pattern": "UCO Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "BOM"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Bank of Maharashtra"
+  },
+  {
+    "label": "BANK",
+    "pattern": "IOB"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Indian Overseas Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "CBI"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Central Bank of India"
+  },
+  {
+    "label": "BANK",
+    "pattern": "PSB"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Punjab and Sind Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "AXIS"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Axis Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "HDFC"
+  },
+  {
+    "label": "BANK",
+    "pattern": "HDFC Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "ICICI"
+  },
+  {
+    "label": "BANK",
+    "pattern": "ICICI Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "KOTAK"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Kotak Mahindra Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "INDUSIND"
+  },
+  {
+    "label": "BANK",
+    "pattern": "IndusInd Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "YES"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Yes Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "IDFC"
+  },
+  {
+    "label": "BANK",
+    "pattern": "IDFC First Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "IDBI"
+  },
+  {
+    "label": "BANK",
+    "pattern": "IDBI Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "FEDERAL"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Federal Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "SOUTH INDIAN"
+  },
+  {
+    "label": "BANK",
+    "pattern": "South Indian Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "KARNATAKA"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Karnataka Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "KARUR VYSYA"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Karur Vysya Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "CITY UNION"
+  },
+  {
+    "label": "BANK",
+    "pattern": "City Union Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "TAMILNAD MERCANTILE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Tamilnad Mercantile Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "JAMMU KASHMIR"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Jammu & Kashmir Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "NAINITAL"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Nainital Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "DHANLAXMI"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Dhanlaxmi Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "CSB"
+  },
+  {
+    "label": "BANK",
+    "pattern": "CSB Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "DCB"
+  },
+  {
+    "label": "BANK",
+    "pattern": "DCB Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "RBL"
+  },
+  {
+    "label": "BANK",
+    "pattern": "RBL Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "BANDHAN"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Bandhan Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "AU SMALL FINANCE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Au Small Finance Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "EQUITAS"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Equitas Small Finance Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "UJJIVAN"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Ujjivan Small Finance Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "SURYODAY"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Suryoday Small Finance Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "UTKARSH"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Utkarsh Small Finance Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "ESAF"
+  },
+  {
+    "label": "BANK",
+    "pattern": "ESAF Small Finance Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "FINCARE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Fincare Small Finance Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "JANA"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Jana Small Finance Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "NORTH EAST"
+  },
+  {
+    "label": "BANK",
+    "pattern": "North East Small Finance Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "SHIVALIK"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Shivalik Small Finance Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "CAPITAL"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Capital Small Finance Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "INDIA POST"
+  },
+  {
+    "label": "BANK",
+    "pattern": "India Post Payments Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "FINO"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Fino Payments Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "AIRTEL"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Airtel Payments Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "PAYTM"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Paytm Payments Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "JANALAKSHMI"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Jio Payments Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "FAB"
+  },
+  {
+    "label": "BANK",
+    "pattern": "First Abu Dhabi Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "EMIRATES NBD"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Emirates NBD"
+  },
+  {
+    "label": "BANK",
+    "pattern": "ADCB"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Abu Dhabi Commercial Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "MASHREQ"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Mashreq Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "RAKBANK"
+  },
+  {
+    "label": "BANK",
+    "pattern": "National Bank of Ras Al Khaimah"
+  },
+  {
+    "label": "BANK",
+    "pattern": "CBD"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Commercial Bank of Dubai"
+  },
+  {
+    "label": "BANK",
+    "pattern": "NBF"
+  },
+  {
+    "label": "BANK",
+    "pattern": "National Bank of Fujairah"
+  },
+  {
+    "label": "BANK",
+    "pattern": "BOS"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Bank of Sharjah"
+  },
+  {
+    "label": "BANK",
+    "pattern": "UAB"
+  },
+  {
+    "label": "BANK",
+    "pattern": "United Arab Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "CBI UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Commercial Bank International"
+  },
+  {
+    "label": "BANK",
+    "pattern": "INVEST"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Invest Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "NBQ"
+  },
+  {
+    "label": "BANK",
+    "pattern": "National Bank of Umm Al Qaiwain"
+  },
+  {
+    "label": "BANK",
+    "pattern": "ADIB"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Abu Dhabi Islamic Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "DIB"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Dubai Islamic Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "EIB"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Emirates Islamic Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "SIB"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Sharjah Islamic Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "AJMAN"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Ajman Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "AL HILAL"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Al Hilal Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "RUYA"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Ruya Community Islamic Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "WIO"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Wio Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "ZAND"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Zand Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "AL MARYAH"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Al Maryah Community Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "HSBC UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "HSBC Bank Middle East"
+  },
+  {
+    "label": "BANK",
+    "pattern": "STANDARD CHARTERED UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Standard Chartered Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "CITIBANK UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "CitiBank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "BNP PARIBAS UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "BNP Paribas"
+  },
+  {
+    "label": "BANK",
+    "pattern": "DEUTSCHE UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Deutsche Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "BARCLAYS UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Barclays Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "ARAB BANK UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Arab Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "NBK UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "National Bank of Kuwait"
+  },
+  {
+    "label": "BANK",
+    "pattern": "AHLI UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Al Ahli Bank of Kuwait"
+  },
+  {
+    "label": "BANK",
+    "pattern": "DOHA BANK UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Doha Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "BANQUE MISR UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Banque Misr"
+  },
+  {
+    "label": "BANK",
+    "pattern": "HABIB UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Habib Bank Limited"
+  },
+  {
+    "label": "BANK",
+    "pattern": "SAMBA UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Samba Financial Group"
+  },
+  {
+    "label": "BANK",
+    "pattern": "RAFIDAIN UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Rafidain Bank"
+  },
+  {
+    "label": "BANK",
+    "pattern": "BANK MELLI UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Bank Melli Iran"
+  },
+  {
+    "label": "BANK",
+    "pattern": "SADERAT UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Bank Saderat Iran"
+  },
+  {
+    "label": "BANK",
+    "pattern": "NBB UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "National Bank of Bahrain"
+  },
+  {
+    "label": "BANK",
+    "pattern": "NBO UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "National Bank of Oman"
+  },
+  {
+    "label": "BANK",
+    "pattern": "BOC UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Bank of China"
+  },
+  {
+    "label": "BANK",
+    "pattern": "ICBC UAE"
+  },
+  {
+    "label": "BANK",
+    "pattern": "Industrial and Commercial Bank of China"
+  }
+]
