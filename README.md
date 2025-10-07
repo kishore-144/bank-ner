@@ -1,6 +1,3 @@
-Sure! Here's a professional, clean, and well-structured README in Markdown for your repo:
-
-````markdown
 # Bank NER API
 
 A **FastAPI-based Named Entity Recognition (NER) API** for detecting bank names using **spaCy**. The API supports customizable patterns, is **Dockerized** for easy deployment, and ready for **cloud hosting**.
