@@ -15,5 +15,4 @@ COPY . .
 EXPOSE 8000
 
 # Use a shell command so $PORT env variable is expanded
-CMD gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app --bind 0.0.0.0:${PORT:-8000}
-
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
