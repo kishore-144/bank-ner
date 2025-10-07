@@ -176,11 +176,4 @@ This project is licensed under the **MIT License**.
 **Kishore**
 Passionate about machine learning, web development, and building scalable APIs.
 
-```
-
 ---
-
-If you want, I can also **add badges** (like Python version, Docker, build status) and **make it visually more GitHub-friendly**, so it looks super professional.  
-
-Do you want me to do that next?
-```
