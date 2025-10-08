@@ -1,0 +1,35 @@
+# Azure DevOps pipeline for building and running a Python Docker app
+
+trigger:
+- main  # change to your branch if needed
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  imageName: 'bank-ner-app'       # name of the Docker image
+  tag: '$(Build.BuildId)'         # unique tag for each build
+
+stages:
+- stage: Build
+  displayName: Build Docker Image
+  jobs:
+  - job: Build
+    displayName: Build
+    steps:
+    - task: Docker@2
+      displayName: Build Docker Image
+      inputs:
+        command: build
+        dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
+        tags: |
+          $(imageName):$(tag)
+          $(imageName):latest
+
+    - task: Docker@2
+      displayName: Run Docker Container
+      inputs:
+        command: run
+        containerName: 'bank-ner-container'
+        imageName: '$(imageName):latest'
+        ports: '8000:8000'  # change if your app uses a different port
