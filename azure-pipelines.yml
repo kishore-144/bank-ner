@@ -25,11 +25,3 @@ stages:
         tags: |
           $(imageName):$(tag)
           $(imageName):latest
-
-    - task: Docker@2
-      displayName: Run Docker Container
-      inputs:
-        command: run
-        containerName: 'bank-ner-container'
-        imageName: '$(imageName):latest'
-        ports: '8000:8000'  # change if your app uses a different port
