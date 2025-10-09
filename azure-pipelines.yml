@@ -1,42 +1,62 @@
 # Azure DevOps pipeline for building and running a Python Docker app on self-hosted agent
-
 trigger:
-- main
+- main  # or your branch name
 
 pool:
-  name: Default
+  name: Default          # Self-hosted agent pool name
   demands:
     - agent.os -equals Linux
 
 variables:
   imageName: 'bank-ner-app'
-  tag: 'latest'
+  tag: '$(Build.BuildId)'
 
 stages:
 - stage: BuildAndRun
-  displayName: Build and Run Docker
+  displayName: Build and Run Docker Image
   jobs:
-  - job: BuildDocker
-    displayName: Build and Run Docker Container
+  - job: BuildAndRun
+    displayName: Build and Run
     steps:
 
-      # Step 1: Build Docker image
-      - task: Docker@2
-        displayName: Build Docker Image
-        inputs:
-          command: build
-          dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
-          imageName: 'bank-ner-app:latest'
+    # STEP 1: Build the Docker image with proper tag
+    - task: Docker@2
+      displayName: Build Docker Image
+      inputs:
+        command: build
+        dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
+        tags: |
+          $(imageName):$(tag)
+          $(imageName):latest
 
-      # Step 2: Run container from the image
-      - script: |
-          echo "Stopping old container if exists..."
-          docker stop bank-ner-container || true
-          docker rm bank-ner-container || true
+    # STEP 2: Run the container — fallback to latest built image if tag fails
+    - script: |
+        echo "Stopping old container if exists..."
+        docker stop bank-ner-container || true
+        docker rm bank-ner-container || true
 
-          echo "Running new container..."
-          docker run -d --name bank-ner-container -p 8000:8000 $(imageName):$(tag)
-        displayName: Run Docker Container
+        echo "Checking if tagged image exists..."
+        if docker images $(imageName):latest | grep -q $(imageName); then
+            echo "Tagged image found. Running from: $(imageName):latest"
+            docker run -d --name bank-ner-container -p 8000:8000 $(imageName):latest
+        else
+            echo "Tagged image not found. Fallback to latest built image ID."
+            latest_image=$(docker images -q | head -n 1)
+            if [ -z "$latest_image" ]; then
+                echo "❌ No Docker image found. Build might have failed."
+                exit 1
+            fi
+            echo "Using image ID: $latest_image"
+            docker run -d --name bank-ner-container -p 8000:8000 $latest_image
+        fi
+      displayName: Run Docker Container (with fallback)
+
+    # Optional cleanup step to avoid <none> build-up
+    - script: |
+        echo "Cleaning up dangling images..."
+        docker image prune -f || true
+      displayName: Cleanup dangling images
+
 
 
 # # Azure DevOps pipeline for building and running a Python Docker app on self-hosted agent
