@@ -10,7 +10,7 @@ pool:
 
 variables:
   imageName: 'bank-ner-app'       # name of the Docker image
-  tag: '$(Build.BuildId)'         # unique tag for each build
+  tag: 'latest'                   # Use latest, or $(Build.BuildId) for unique builds
 
 stages:
 - stage: Build
@@ -28,7 +28,6 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: |
           $(imageName):$(tag)
-          $(imageName):latest
 
     # Step 2: Stop/remove any existing container and run a new one
     - script: |
@@ -37,5 +36,5 @@ stages:
         docker rm bank-ner-container || true
 
         echo "Running new container..."
-        docker run -d --name bank-ner-container -p 8000:8000 $(imageName):latest
+        docker run -d --name bank-ner-container -p 8000:8000 $(imageName):$(tag)
       displayName: Run Docker Container
