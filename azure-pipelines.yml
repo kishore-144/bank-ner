@@ -1,70 +1,41 @@
+# Azure DevOps pipeline for building and running a Python Docker app on self-hosted agent
+
 trigger:
-- main
+- main  # change to your branch if needed
 
 pool:
-  name: Default          # your self-hosted Linux agent
+  name: Default          # the agent pool where your Linux VM agent is registered
+  demands:
+    - agent.os -equals Linux
 
 variables:
-  imageName: 'bank-ner-app'
-  tag: '$(Build.BuildId)'
+  imageName: 'bank-ner-app'       # name of the Docker image
+  tag: '$(Build.BuildId)'         # unique tag for each build
 
 stages:
 - stage: Build
-  displayName: Build and Run Docker
+  displayName: Build and Run Docker Image
   jobs:
   - job: Build
     displayName: Build
     steps:
 
-    # Build and run Docker container in one step
+    # Step 1: Build the Docker image
     - task: Docker@2
-      displayName: Build and Run Docker Container
+      displayName: Build Docker Image
       inputs:
-        containerName: 'bank-ner-container'
-        command: 'buildAndRun'
+        command: build
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
-        imageName: '$(imageName):latest'
-        ports: '8000:8000'
-        removePreviousContainer: true
+        tags: |
+          $(imageName):$(tag)
+          $(imageName):latest
 
-# # Azure DevOps pipeline for building and running a Python Docker app on self-hosted agent
+    # Step 2: Stop/remove any existing container and run a new one
+    - script: |
+        echo "Stopping old container if exists..."
+        docker stop bank-ner-container || true
+        docker rm bank-ner-container || true
 
-# trigger:
-# - main  # change to your branch if needed
-
-# pool:
-#   name: Default          # the agent pool where your Linux VM agent is registered
-#   demands:
-#     - agent.os -equals Linux
-
-# variables:
-#   imageName: 'bank-ner-app'       # name of the Docker image
-#   tag: '$(Build.BuildId)'         # unique tag for each build
-
-# stages:
-# - stage: Build
-#   displayName: Build and Run Docker Image
-#   jobs:
-#   - job: Build
-#     displayName: Build
-#     steps:
-
-#     # Step 1: Build the Docker image
-#     - task: Docker@2
-#       displayName: Build Docker Image
-#       inputs:
-#         command: build
-#         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
-#         tags: |
-#           $(imageName):$(tag)
-#           $(imageName):latest
-
-#     # Step 2: Stop/remove any existing container and run a new one
-#     - script: |
-#         echo "Stopping old container if exists..."
-#         docker stop bank-ner-container || true
-#         docker rm bank-ner-container || true
-
-#         echo "Running new container..."
-#         docker run -d --name bank-ner-container -p 8000:8000 $(imageName):latest
-#       displayName: Run Docker Container
+        echo "Running new container..."
+        docker run -d --name bank-ner-container -p 8000:8000 $(imageName):latest
+      displayName: Run Docker Container
