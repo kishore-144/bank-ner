@@ -1,10 +1,12 @@
-# Azure DevOps pipeline for building and running a Python Docker app
+# Azure DevOps pipeline for building and running a Python Docker app on self-hosted agent
 
 trigger:
 - main  # change to your branch if needed
 
 pool:
-  vmImage: 'ubuntu-latest'
+  name: Default          # the agent pool where your Linux VM agent is registered
+  demands:
+    - agent.os -equals Linux
 
 variables:
   imageName: 'bank-ner-app'       # name of the Docker image
