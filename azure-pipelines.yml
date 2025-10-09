@@ -20,15 +20,24 @@ stages:
     displayName: Build and Run Docker Container
     steps:
 
+      # Step 1: Build Docker image
       - task: Docker@2
-        displayName: Build and Run Docker Container
+        displayName: Build Docker Image
         inputs:
-          command: 'buildAndRun'
+          command: build
           dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
           imageName: '$(imageName):$(tag)'
-          containerName: 'bank-ner-container'
-          ports: '8000:8000'
-          removePreviousContainer: true
+
+      # Step 2: Run container from the image
+      - script: |
+          echo "Stopping old container if exists..."
+          docker stop bank-ner-container || true
+          docker rm bank-ner-container || true
+
+          echo "Running new container..."
+          docker run -d --name bank-ner-container -p 8000:8000 $(imageName):$(tag)
+        displayName: Run Docker Container
+
 
 # # Azure DevOps pipeline for building and running a Python Docker app on self-hosted agent
 
